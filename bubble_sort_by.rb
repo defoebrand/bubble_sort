@@ -1,17 +1,12 @@
-require "pry"
-def sift_through(arr)
-  arr.each_with_index do |_num, ind|
-    break if arr[ind + 1].nil?
-    next unless arr[ind].length > arr[ind + 1].length
+def bubble_sort_by(arr)
+  cycle = arr.length - 1
+  cycle.times do
+    arr.each_with_index do |_val, ind|
+      break if arr[ind + 1].nil?
 
-    arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind]
+      sort_by = yield(arr[ind], arr[ind + 1]) if block_given?
+      arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind] if sort_by.positive?
+    end
   end
-  binding.pry
+  arr = arr
 end
-
-def bubble_sort_by
-  arr = yield
-  arr.length.times { sift_through(arr) }
-  p arr
-end
-bubble_sort_by{%w[what hi pointer hey]}
