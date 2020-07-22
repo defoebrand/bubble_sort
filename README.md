@@ -12,7 +12,7 @@ This project was compiled by Kalu and Brandon in the Ruby section of the Microve
 -   Ruby
 -   Atom & VS Code
 -   Ubuntu
--   Rubocop linters was used to check for style errors
+-   Rubocop linter was used to check for style errors
 
 ## Getting Started
 
