@@ -1,10 +1,9 @@
 def sift_through(arr)
   arr.each_with_index do |_num, ind|
-    if arr[ind + 1].nil?
-      break
-    elsif arr[ind] > arr[ind + 1]
-      arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind]
-    end
+    break if arr[ind + 1].nil?
+    next unless arr[ind] > arr[ind + 1]
+
+    arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind]
   end
 end
 
@@ -12,5 +11,7 @@ def bubble_sort(arr)
   arr.length.times { sift_through(arr) }
   arr = arr
 end
+
+arr = [5, 4, 3, 2, 1]
 
 p bubble_sort(arr)
