@@ -11,7 +11,4 @@ def bubble_sort(arr)
   arr.length.times { sift_through(arr) }
   arr = arr
 end
-
-arr = [5, 4, 3, 2, 1]
-
 p bubble_sort(arr)
