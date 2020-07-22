@@ -1,3 +1,4 @@
+require "pry"
 def sift_through(arr)
   arr.each_with_index do |_num, ind|
     break if arr[ind + 1].nil?
@@ -5,6 +6,7 @@ def sift_through(arr)
 
     arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind]
   end
+  binding.pry
 end
 
 def bubble_sort_by
@@ -12,3 +14,4 @@ def bubble_sort_by
   arr.length.times { sift_through(arr) }
   p arr
 end
+bubble_sort_by{%w[what hi pointer hey]}
