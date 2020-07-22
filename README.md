@@ -2,8 +2,8 @@
 
 This is Brandon and Kalu's Bubble Sort Ruby project
 
-![Bubble Sort Screenshot](<>)
-![Bubble Sort By Screenshot](<>)
+![Bubble Sort Screenshot](bs_screenshot.png)
+![Bubble Sort By Screenshot](bsb_screenshot.png)
 
 This project was compiled by Kalu and Brandon in the Ruby section of the Microverse course work. It involved using ruby to create a sorting method.
 
