@@ -20,7 +20,7 @@ def without_block(cycle, arr)
     arr.each_with_index do |_val, ind|
       break if arr[ind + 1].nil?
 
-      arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind] if (arr[ind].length - arr[ind + 1].length).positive?
+      arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind] if (arr[ind].length <=> arr[ind + 1].length).positive?
     end
   end
 end
