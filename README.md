@@ -3,7 +3,7 @@
 This is Brandon and Kalu's Bubble Sort Ruby project
 
 ![Bubble Sort Screenshot](bs_screenshot.png)
-![Bubble Sort By (with do end) Screenshot](bsb_screenshot.png)
+![Bubble Sort By (with do end) Screenshot](bsb1_screenshot.png)
 ![Bubble Sort By (with {}) Screenshot](bsb2_screenshot.png)
 
 This project was compiled by Kalu and Brandon in the Ruby section of the Microverse course work. It involved using ruby to create a sorting method.
