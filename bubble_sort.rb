@@ -8,5 +8,5 @@ def bubble_sort(arr)
       arr[ind], arr[ind + 1] = arr[ind + 1], arr[ind]
     end
   end
-  arr = arr
+  arr
 end
