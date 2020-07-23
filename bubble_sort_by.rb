@@ -27,6 +27,4 @@ end
 
 greetings = %w[hey howdy hello hey hi]
 
-p bubble_sort_by(greetings) do |left, right|
-  left.length - right.length
-end
+p bubble_sort_by(greetings) { |left, right| left.length - right.length }
