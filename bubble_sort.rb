@@ -10,3 +10,7 @@ def bubble_sort(arr)
   end
   arr
 end
+
+arr = [9, 8, 7, 6, 5, 6, 7, 8, 4, 3, 2, 1]
+
+p bubble_sort(arr)
